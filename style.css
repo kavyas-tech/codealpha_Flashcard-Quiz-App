@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:blanchedalmond;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    width:500px;
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+}
+
+h1,h2{
+    text-align:center;
+    margin-bottom:15px;
+}
+
+#welcome{
+    color:#007bff;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin:8px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+button{
+    padding:10px 15px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    color:white;
+    margin:5px;
+}
+
+.login-btn{
+    width:100%;
+    background:#007bff;
+}
+
+.flashcard{
+    border:2px solid #ddd;
+    border-radius:10px;
+    padding:25px;
+    text-align:center;
+    min-height:180px;
+    margin-bottom:15px;
+}
+
+.question{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.answer{
+    margin-top:15px;
+    color:#28a745;
+    font-size:18px;
+    display:none;
+}
+
+.actions{
+    text-align:center;
+}
+
+.show-btn{background:#28a745;}
+.prev-btn{background:#6c757d;}
+.next-btn{background:#007bff;}
+.edit-btn{background:#ffc107;color:black;}
+.delete-btn{background:#dc3545;}
+
+.add-btn{
+    width:100%;
+    background:#17a2b8;
+}
+
+.form{
+    margin-top:20px;
+}
+
+hr{
+    margin:20px 0;
+}

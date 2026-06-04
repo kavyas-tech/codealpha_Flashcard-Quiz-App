@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flashcard Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div id="loginPage">
+        <h2>Sign Up</h2>
+
+        <input type="text" id="username" placeholder="Enter Username">
+        <input type="password" id="password" placeholder="Enter Password">
+
+        <button class="login-btn" onclick="login()">
+            Login
+        </button>
+    </div>
+
+    <div id="appPage" style="display:none;">
+
+        <h2 id="welcome"></h2>
+
+        <h1>Flashcard Quiz App</h1>
+
+        <div class="flashcard">
+            <div class="question" id="question"></div>
+            <div class="answer" id="answer"></div>
+        </div>
+
+        <div class="actions">
+            <button class="show-btn" onclick="toggleAnswer()">Show Answer</button>
+            <button class="prev-btn" onclick="prevCard()">Previous</button>
+            <button class="next-btn" onclick="nextCard()">Next</button>
+            <button class="edit-btn" onclick="editCard()">Edit</button>
+            <button class="delete-btn" onclick="deleteCard()">Delete</button>
+        </div>
+
+        <hr>
+
+        <div class="form">
+            <h3>Add New Flashcard</h3>
+
+            <input type="text" id="newQuestion" placeholder="Enter Question">
+            <input type="text" id="newAnswer" placeholder="Enter Answer">
+
+            <button class="add-btn" onclick="addCard()">
+                Add Flashcard
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
